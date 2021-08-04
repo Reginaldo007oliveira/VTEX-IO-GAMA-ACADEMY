@@ -1,0 +1,76 @@
+{
+  "store.home": {
+    "blocks": ["rich-text", "tab-layout#home"]
+  },
+  "rich-text": {
+    "props": {
+      "text": "VTEX Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+
+  "tab-layout#home": {
+    "children": ["tab-list#home", "tab-content#home"]
+  },
+  "tab-list#home": {
+    "children": ["tab-list.item#1", "tab-list.item#2"]
+  },
+  "tab-content#home": {
+    "children": ["tab-content.item#1", "tab-content.item#2"]
+  },
+  "tab-list.item#1": {
+    "props": {
+      "tabId": "majorAppliances", // identificador unico
+      "label": "Major Appliances",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#2": {
+    "props": {
+      "tabId": "electronics", // identificador unico
+      "label": "Electronics"
+    }
+  },
+  "tab-content.item#1": {
+    "children": ["rich-text#1"],
+    "props": {
+      "tabId": "majorAppliances"
+    }
+  },
+  "tab-content.item#2": {
+    "children": ["rich-text#2"],
+    "props": {
+      "tabId": "electronics"
+    }
+  },
+  "rich-text#1": {
+    "props": {
+      "text": "Texto para Major Appliances",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Texto para Electronics",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#home1": {
+    "props": {
+      "text": "Área do conteúdo da tab-list.item com  tabId = majorAppliances",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#home2": {
+    "props": {
+      "text": "Área do conteúdo da tab-list.item com  tabId = electronics",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  }
+}
